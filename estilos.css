@@ -1,0 +1,147 @@
+body {
+  background-color: #1a1a2e;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  color: #fa6d8f;
+  font-size: 3rem;
+
+}
+
+h2 {
+  color: #7c6dfa;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+h2 {
+  color: #7c6dfa;
+  background-color: #2a2a3a;
+  padding: 20px;
+  border: 2px solid #fa6d8f;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.destacado {
+  color: #6dfabc;
+  background-color: #2a2a3a;
+  padding: 15px;
+  border-left: 4px solid #6dfabc;
+  border-radius: 6px;
+}
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.tarjeta {
+  background-color: #2a2a3a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #3a3a4a;
+  flex: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  border-color: #7c6dfa;
+  box-shadow: 0 10px 30px rgba(124, 109, 250, 0.3);
+}
+
+.tarjeta h4 {
+  color: #7c6dfa;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #16162a;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.boton-grande {
+  background-color: #7c6dfa;
+  color: white;
+  padding: 18px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-grande:hover {
+  background-color: #fa6d8f;
+  padding: 18px 80px;
+  border-radius: 40px;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.caja {
+  background-color: #7c6dfa;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+}
+/* Cuando la pantalla mida 768px o menos (tablets y celulares) */
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  body {
+    padding: 20px;
+  }
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #7c6dfa, #fa6d8f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  color: white;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: white;
+  max-width: 600px;
+}
